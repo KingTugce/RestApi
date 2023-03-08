@@ -15,7 +15,7 @@ stores =  [
 ]
 
 # end point is "/store"
-@app.get("/store")        
+@app.get("/store") 
 def get_stores():
     return {"stores": stores}
 
