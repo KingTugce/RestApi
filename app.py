@@ -47,7 +47,7 @@ def get_store(name):
 
 
 @app.get("/store/<string:name>/item")
-def get_item_in_store(name):
+def get_item_in_store(name): 
     for store in stores:
         if store["name"] == name:
             return {"items": store["items"]}
